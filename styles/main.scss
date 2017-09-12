@@ -99,6 +99,13 @@ section {
 	font-family: 'PT Sans', sans-serif;
 	margin-bottom: 0px;
 	padding: 40px 200px;
+	font-size: 19px;
+	line-height: 30px;
+	
+	.wrapper {
+		max-width: 1700px;
+		margin: auto;
+	}
 	
 	h2 {
 		font-size: 30px;

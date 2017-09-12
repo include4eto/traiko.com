@@ -62,7 +62,12 @@ section {
   color: #192a3e;
   font-family: 'PT Sans', sans-serif;
   margin-bottom: 0px;
-  padding: 40px 200px; }
+  padding: 40px 200px;
+  font-size: 19px;
+  line-height: 30px; }
+  section .wrapper {
+    max-width: 1700px;
+    margin: auto; }
   section h2 {
     font-size: 30px;
     margin-bottom: 15px;
