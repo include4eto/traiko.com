@@ -1,0 +1,15 @@
+.innerpage {
+    header {
+        min-height: 50px;
+        background: rgba(183, 188, 208, 1);
+
+        .row {
+            padding-top: 0px;
+            padding-bottom: 30px;
+
+            .title {
+                padding-top: 20px;
+            }
+        }
+    }
+}
