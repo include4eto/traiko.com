@@ -17,10 +17,10 @@
   },
   "homepage": "https://github.com/include4eto/traiko.com#readme",
   "devDependencies": {
-    "browser-sync": "^2.18.13",
+    "browser-sync": "^2.24.2",
     "gulp": "^3.9.1",
     "gulp-livereload": "^3.8.1",
-    "gulp-sass": "^3.1.0",
-    "st": "^1.2.0"
+    "gulp-sass": "^3.2.1",
+    "st": "^1.2.2"
   }
 }
