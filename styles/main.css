@@ -104,3 +104,6 @@ section {
       width: 100%;
       padding-left: 0;
       padding-top: 20px; } }
+
+.text-it {
+  font-style: italic; }
