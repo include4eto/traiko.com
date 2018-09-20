@@ -6,3 +6,30 @@
     padding-bottom: 30px; }
     .innerpage header .row .title {
       padding-top: 20px; }
+
+.innerpage.dire {
+  background: #eaedf1; }
+  .innerpage.dire section.arch {
+    width: 100%;
+    padding: 20px;
+    text-align: center; }
+    .innerpage.dire section.arch canvas {
+      border: 1px solid rgba(0, 0, 0, 0.3); }
+    .innerpage.dire section.arch .controls {
+      width: 50%;
+      margin: auto;
+      margin-bottom: 50px;
+      position: relative; }
+      .innerpage.dire section.arch .controls .slidecontainer {
+        width: 48%; }
+        .innerpage.dire section.arch .controls .slidecontainer:first-child {
+          float: left; }
+        .innerpage.dire section.arch .controls .slidecontainer:last-child {
+          float: right; }
+      .innerpage.dire section.arch .controls .title {
+        margin-bottom: 5px; }
+    .innerpage.dire section.arch .arch-data {
+      margin-top: 30px;
+      margin-bottom: 30px; }
+    .innerpage.dire section.arch .arch-data, .innerpage.dire section.arch .lfire {
+      display: inline-block; }

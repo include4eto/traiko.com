@@ -13,3 +13,50 @@
         }
     }
 }
+
+.innerpage.dire {
+    background: #eaedf1;
+    section {
+        &.arch {
+            width: 100%;
+            padding: 20px;
+            text-align: center;
+
+            canvas {
+                border: 1px solid rgba(0, 0, 0, 0.3);    
+            }
+
+            .controls {
+                width: 50%;
+                margin: auto;
+                margin-bottom: 50px;
+                position: relative;
+
+                .slidecontainer {
+                    width: 48%;
+
+                    &:first-child {
+                        float: left;
+                    }
+
+                    &:last-child {
+                        float: right;
+                    }
+                }
+
+                .title {
+                    margin-bottom: 5px;
+                }
+            }
+
+            .arch-data {
+                margin-top: 30px;
+                margin-bottom: 30px;
+            }
+
+            .arch-data, .lfire {
+                display: inline-block;
+            }
+        } // .arch
+    }
+}

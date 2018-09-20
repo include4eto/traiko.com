@@ -1,0 +1,84 @@
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>Traiko Dinev - Personal Webpage</title>
+    
+        <link rel="stylesheet" href="/styles/font-awesome-4.7.0/css/font-awesome.min.css">
+        <link href="/styles/ptsans.css" rel="stylesheet">
+        <link href="/styles/main.css" rel="stylesheet">
+        <link href="/styles/common.css" rel="stylesheet">
+        <link href="/styles/innerpage.css" rel="stylesheet">
+    </head>
+    
+    <body class="innerpage dire">
+        <header>
+            <div class="row">
+                <div class="title">
+                    <div class="name">
+                        <h1>Traiko Dinev</h1>
+                        <div class="assoc">University of Edinburgh CS Student</div>
+                        <div class="email">traiko.dinev at gmail.com</div>
+                    </div>
+                </div>
+            </div>
+        </header>
+        
+        <section class="links">
+            <div class="wrapper">
+                <p>
+                    <a href="/">Don't want to be here? Go back</a>
+                </p>
+
+                <h1>Dynamic Likelihood-free Inference via Ratio Estimation (DIRE)</h1>
+                This is a companion article to our 
+
+                <p class="intro">
+                    <h2>Background: Approximate Bayesian Computation</h2>
+
+                </p>
+                
+                <section class="arch">
+                    <div class="controls">
+                        <div class="slidecontainer">
+                            <div class="title">$\theta_1$</div>
+                            
+                            <div class="slider" data-bind="slider: theta1">
+                                <div class="slider-inner"></div>
+                            </div>
+                        </div>
+                        <div class="slidecontainer">
+                            <div class="title">$\theta_2$</div>
+                            
+                            <div class="slider" data-bind="slider: theta2">
+                                <div class="slider-inner"></div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="arch-data">
+                        <canvas id="arch-data" width="800px" height="400px"></canvas> 
+                    </div>
+                    
+                    <div class="lfire">
+                        <canvas id="lfire-theta1" width="400px" height="400px"></canvas>
+                        <canvas id="lfire-theta2" width="400px" height="400px"></canvas>
+                    </div>
+                </section>
+            </div>
+        </section>
+
+        <script src='/scripts/lib/knockout-3.4.2.js'></script>
+
+        <script src="/scripts/lib/tfjs.js"> </script>
+        
+        <script src='/scripts/lib/jquery-3.3.1.min.js'></script>
+        <script src='/scripts/lib/Chart.bundle.min.js'></script>
+        <script src='/scripts/lib/numjs.min.js'></script>
+        <script src='/scripts/lib/mathjax/MathJax.js'></script>
+
+        <script src='/scripts/aux.js'></script>
+        <script src='/scripts/pages/dire.js'></script>
+    </body>
+    </html>
