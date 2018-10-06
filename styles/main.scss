@@ -1,3 +1,5 @@
+@import 'common.scss';
+
 body {
 	background: #fff;
 	margin: 0;
@@ -167,3 +169,57 @@ section {
 	font-style: italic;
 }
 
+
+.tiles {
+	margin-top: 30px;
+
+	.tile {
+		border: 1px solid#192a3e;
+		display: inline-block;
+		min-width: 140px;
+		min-height: 140px;
+		border-radius: 20px;
+		margin-right: 20px;
+		margin-bottom: 20px;
+
+		padding: 0px 20px;
+
+		// $color1: #d9ecff;
+		// $color2: #bebebe;
+		
+		// background: linear-gradient(135deg, $color2 22px, $color1 22px, $color1 24px, transparent 24px, transparent 67px, $color1 67px, $color1 69px, transparent 69px), linear-gradient(225deg, $color2 22px, $color1 22px, $color1 24px, transparent 24px, transparent 67px, $color1 67px, $color2 69px, transparent 69px)0 64px;
+		// background-color: $color2;
+		// background-size: 64px 128px;
+
+		background: 
+			radial-gradient(rgba(0, 0, 0, 0.4) 3px, transparent 4px),
+			radial-gradient(rgba(0, 0, 0, 0.4) 3px, transparent 4px),
+			linear-gradient(#fff 4px, transparent 0),
+			linear-gradient(45deg, transparent 74px, transparent 75px, #a4a4a4 75px, #a4a4a4 76px, transparent 77px, transparent 109px),
+			linear-gradient(-45deg, transparent 75px, transparent 76px, #a4a4a4 76px, #a4a4a4 77px, transparent 78px, transparent 109px),
+		#fff;
+		background-size: 109px 109px, 109px 109px,100% 6px, 109px 109px, 109px 109px;
+		background-position: 54px 55px, 0px 0px, 0px 0px, 0px 0px, 0px 0px;
+		
+		cursor: pointer;
+		@include transition(opacity .2s);
+
+		text-align: center;
+		line-height: 150px;
+		color: #192a3e;
+		font-weight: bold;
+		font-size: rem-calc(25);
+		opacity: .8;
+
+		color: rgb(51, 51, 51);
+		text-align: center;
+		text-overflow: clip;
+		letter-spacing: 1px;
+		// text-shadow: -3px 0 1px rgb(30,242,241) , 2px 0 1px rgb(246,5,10);
+		
+		&:hover {
+			// background: #eaedf1;
+			opacity: 1;
+		}
+	}
+}
