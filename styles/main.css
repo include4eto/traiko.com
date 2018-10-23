@@ -1,3 +1,32 @@
+h2, h3, h4, h5, h6 {
+  color: #192a3e;
+  font-family: 'PT Sans', sans-serif; }
+
+a {
+  text-decoration: none;
+  color: #1f92ac; }
+  a:hover {
+    color: #176e82; }
+
+.center {
+  text-align: center; }
+
+.slider {
+  width: 100%;
+  height: 20px;
+  background: rgba(0, 0, 0, 0.2);
+  position: relative; }
+  .slider .slider-inner {
+    position: absolute;
+    left: calc(50% - 10px);
+    top: 0px;
+    height: 20px;
+    width: 20px;
+    background: #23a5c2;
+    cursor: pointer; }
+    .slider .slider-inner:hover {
+      background: #1f92ac; }
+
 body {
   background: #fff;
   margin: 0;
@@ -107,3 +136,36 @@ section {
 
 .text-it {
   font-style: italic; }
+
+.tiles {
+  margin-top: 30px; }
+  .tiles .tile {
+    border: 1px solid #192a3e;
+    display: inline-block;
+    min-width: 140px;
+    min-height: 140px;
+    border-radius: 20px;
+    margin-right: 20px;
+    margin-bottom: 20px;
+    padding: 0px 20px;
+    background: radial-gradient(rgba(0, 0, 0, 0.4) 3px, transparent 4px), radial-gradient(rgba(0, 0, 0, 0.4) 3px, transparent 4px), linear-gradient(#fff 4px, transparent 0), linear-gradient(45deg, transparent 74px, transparent 75px, #a4a4a4 75px, #a4a4a4 76px, transparent 77px, transparent 109px), linear-gradient(-45deg, transparent 75px, transparent 76px, #a4a4a4 76px, #a4a4a4 77px, transparent 78px, transparent 109px), #fff;
+    background-size: 109px 109px, 109px 109px,100% 6px, 109px 109px, 109px 109px;
+    background-position: 54px 55px, 0px 0px, 0px 0px, 0px 0px, 0px 0px;
+    cursor: pointer;
+    -webkit-transition: opacity 0.2s;
+    -moz-transition: opacity 0.2s;
+    -ms-transition: opacity 0.2s;
+    -o-transition: opacity 0.2s;
+    transition: opacity 0.2s;
+    text-align: center;
+    line-height: 150px;
+    color: #192a3e;
+    font-weight: bold;
+    font-size: 1.5625rem;
+    opacity: .8;
+    color: #333333;
+    text-align: center;
+    text-overflow: clip;
+    letter-spacing: 1px; }
+    .tiles .tile:hover {
+      opacity: 1; }
