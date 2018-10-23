@@ -8,28 +8,49 @@
       padding-top: 20px; }
 
 .innerpage.dire {
-  background: #eaedf1; }
-  .innerpage.dire section.arch {
-    width: 100%;
-    padding: 20px;
-    text-align: center; }
-    .innerpage.dire section.arch canvas {
-      border: 1px solid rgba(0, 0, 0, 0.3); }
-    .innerpage.dire section.arch .controls {
-      width: 50%;
-      margin: auto;
-      margin-bottom: 50px;
-      position: relative; }
-      .innerpage.dire section.arch .controls .slidecontainer {
-        width: 48%; }
-        .innerpage.dire section.arch .controls .slidecontainer:first-child {
-          float: left; }
-        .innerpage.dire section.arch .controls .slidecontainer:last-child {
-          float: right; }
-      .innerpage.dire section.arch .controls .title {
-        margin-bottom: 5px; }
-    .innerpage.dire section.arch .arch-data {
-      margin-top: 30px;
-      margin-bottom: 30px; }
-    .innerpage.dire section.arch .arch-data, .innerpage.dire section.arch .lfire {
-      display: inline-block; }
+  background: white; }
+  .innerpage.dire div.img {
+    margin: 50px 0px 50px 0px; }
+  .innerpage.dire img {
+    width: 100%; }
+    .innerpage.dire img.fr {
+      float: right; }
+    .innerpage.dire img.rej-sampling {
+      width: 100%;
+      max-width: 1000px; }
+    .innerpage.dire img.model-diagram {
+      max-width: 800px; }
+  .innerpage.dire section {
+    background: white; }
+    .innerpage.dire section.arch {
+      width: 100%;
+      padding: 20px;
+      text-align: center; }
+      .innerpage.dire section.arch canvas {
+        border: 1px solid rgba(0, 0, 0, 0.3);
+        display: inline-block !important; }
+      .innerpage.dire section.arch .controls {
+        width: 50%;
+        margin: auto;
+        margin-bottom: 70px;
+        position: relative; }
+        .innerpage.dire section.arch .controls .slidecontainer {
+          width: 48%; }
+          .innerpage.dire section.arch .controls .slidecontainer:first-child {
+            float: left; }
+          .innerpage.dire section.arch .controls .slidecontainer:last-child {
+            float: right; }
+        .innerpage.dire section.arch .controls .title {
+          margin-bottom: 5px; }
+          .innerpage.dire section.arch .controls .title canvas {
+            width: 45%; }
+      .innerpage.dire section.arch .arch-data {
+        margin-bottom: 30px;
+        text-align: center; }
+        .innerpage.dire section.arch .arch-data canvas {
+          width: 100%;
+          height: 400px;
+          max-width: 1000px; }
+      .innerpage.dire section.arch .lfire canvas {
+        width: 48%;
+        max-width: 500px; }

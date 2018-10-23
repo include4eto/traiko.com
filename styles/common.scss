@@ -12,6 +12,10 @@ a {
 	}
 }
 
+.center {
+    text-align: center;
+}
+
 .slider {
     width: 100%;
     height: 20px;
@@ -34,8 +38,8 @@ a {
     }
 }
 
-canvas {
-	border: 1px solid black;
-    display: inline-block !important;
-}
+// canvas {
+// 	border: 1px solid black;
+//     display: inline-block !important;
+// }
 
