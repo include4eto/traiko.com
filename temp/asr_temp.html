@@ -1,0 +1,132 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src='/scripts/lib/mathjax/MathJax.js'></script>
+    <title>Temp</title>
+
+    <style>
+        .container {
+            display: grid;
+            grid-template-columns: .7fr [left] 1fr [center] 1fr [right] 1fr [wut] .7fr;
+            grid-template-rows: [header] auto [top] auto [mid] auto [bot] auto [end];
+            justify-items: center;
+            align-items: center;
+        }
+
+        .hr { grid-row: header / span 1; }
+        .tr { grid-row: top / span 1; }
+        .mr { grid-row: mid / span 1; }
+        .br { grid-row: bot / span 1; }
+
+        .c1 { grid-column: left / span 1; }
+        .c2 { grid-column: center / span 1; }
+        .c3 { grid-column: right / span 1; }
+
+        video, img {
+            width: 100%;
+        }
+        
+        video {
+            border: 1px solid black;
+        }
+
+        h3 {
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="h1 c1">
+            <h3 class='tc'>Direct Collocation</h3>
+        </div>
+        <div class="hr c2">
+            <h3 class='tc'>Energy Shaping + LQR</h3>
+        </div>
+        <div class="hr c3">
+            <h3 class='tc'>SARSA</h3>
+        </div>
+
+        <div class="tr c1">
+                $$
+                \renewcommand{\vec}[1]{\mathbf{#1}}
+
+                    \min_{
+                        \vec{u}, \vec{q}
+                    } \sum_{k = 0}^{N - 1} \frac{\Delta t}{2} (u_k^2 + u_{k+1}^2) \quad \text{s.t.} \\
+                    -x_m \leq x_{1,N} \leq -x_m \\
+                    -u_m \leq u_k \leq u_m \\
+                    \vec{x}_0 = \langle -2, 0, 0, 0 \rangle \\
+                    \vec{x}_N = \langle 0, \pi, 0, 0 \rangle \\
+                    \frac{\Delta t}{2} (\vec{f}_{k + 1} + \vec{f}_{k}) =
+                        \vec{q}_{k + 1} - \vec{q}_k
+                $$
+        </div>
+
+        <div class="tr c2">
+            $$
+            \begin{align*}
+                u &= k \dot{\theta} \cos{(\theta)} \hat{E} \\
+                \frac{
+                    \partial \hat{E}
+                }{
+                    \partial t
+                } &= -k \dot{\theta}^2 \cos^2{(\theta)} \hat{E}
+            \end{align*}
+            $$
+            <br>
+            $$
+            \vec{u}^* = \vec{u}_0 - \vec{K} (\vec{x} - \vec{x}_0).
+            $$
+        </div>
+        <div class="tr c3">
+            $$
+                Q(s_t,\ a_t) = (1\ -\ \alpha)\ Q(s_t, a_t)\ + \\
+                    \alpha\ (r_{t+1} + \gamma Q(s_{t+1}, a_{t+1}))
+            $$
+        </div>
+
+        <div class="mr c1">
+            <video src='optimal_control.mp4' autoplay='1' loop='1' controls='1'></video>
+        </div>
+        <div class="mr c2">
+            <video src='classical_control.mp4' autoplay='1' loop='1' controls='1'></video>
+        </div>
+        <div class="mr c3">
+            <video src='sarsa.mp4' autoplay='1' loop='1'></video>
+        </div>
+
+        <div class="br c1">
+            <!-- <h3 class='moveme'>Classic Trajectory</h3> -->
+            <img src='optimal_trajectory.png'>
+        </div>
+
+        <div class="br c2">
+            <!-- <h3 class='moveme'>Classic Trajectory</h3> -->
+            <img src='classic_trajectory.png'>
+        </div>
+
+        <div class="br c3">
+            <!-- <h3 class='moveme'>Classic Trajectory</h3> -->
+            <img src='sarsa_trajectory.png'>
+        </div>
+    </div>
+
+    <script>
+        // MathJax config
+        MathJax.Hub.Config({
+            extensions: ["tex2jax.js"],
+            jax: ["input/TeX", "output/HTML-CSS"],
+            tex2jax: {
+                inlineMath: [['$', '$'], ["\\(", "\\)"]],
+                displayMath: [['$$', '$$'], ["\\[", "\\]"]],
+                processEscapes: true
+            },
+            // "HTML-CSS": { fonts: ["TeX"] }
+        });
+
+    </script>
+</body>
+</html>
