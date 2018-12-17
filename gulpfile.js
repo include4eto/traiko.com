@@ -10,6 +10,7 @@ gulp.task('serve', ['sass'], function () {
 	});
 
 	gulp.watch("./styles/*.scss", ['sass']);
+	gulp.watch("./temp/asr_presentation/css/impress-demo.scss", ['sass-temp']);
 	gulp.watch("*.html").on('change', browserSync.reload);
 	gulp.watch("./pages/**/**/*.html").on('change', browserSync.reload);
 	gulp.watch("./scripts/**/*.js").on('change', browserSync.reload);
@@ -23,6 +24,15 @@ gulp.task('sass', function () {
 			console.error('Error!', err.message);
 		})
 		.pipe(gulp.dest("./styles"))
+		.pipe(browserSync.stream());
+});
+gulp.task('sass-temp', function () {
+	return gulp.src("./temp/asr_presentation/css/impress-demo.scss")
+		.pipe(sass())
+		.on('error', function (err) {
+			console.error('Error!', err.message);
+		})
+		.pipe(gulp.dest("./temp/asr_presentation/css"))
 		.pipe(browserSync.stream());
 });
 
