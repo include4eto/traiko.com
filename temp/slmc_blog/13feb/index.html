@@ -1,0 +1,89 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src='/scripts/lib/mathjax/MathJax.js'></script>
+    <title>Temp</title>
+
+    <style>
+        .container {
+            display: grid;
+            grid-template-columns: .7fr [left] 1fr [center] 1fr [right] .7fr;
+            grid-template-rows: [header] auto [top] auto [mid] auto [bot] auto [end];
+            justify-items: center;
+            align-items: center;
+        }
+
+        .hr { grid-row: header / span 1; }
+        .tr { grid-row: top / span 1; }
+        .mr { grid-row: mid / span 1; }
+        .br { grid-row: bot / span 1; }
+
+        .c1 { grid-column: left / span 1; }
+        .c2 { grid-column: center / span 1; }
+        /* .c3 { grid-column: right / span 1; } */
+
+        video, img {
+            width: 100%;
+        }
+        
+        video {
+            border: 1px solid black;
+        }
+
+        h3 {
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="h1 c1">
+            <h2 class='tc'>iLQR</h2>
+        </div>
+        <div class="hr c2">
+            <h2 class='tc'>DDP</h2>
+        </div>
+
+        <div class="tr c1">
+            <img src='ilqr_trajectory.png'>
+        </div>
+
+        <div class="tr c2">
+            <img src='ddp_trajectory.png'>
+        </div>
+      
+        <div class="mr c1">
+            <video src='ilqr.mp4' autoplay='1' loop='1' controls='1'></video>
+        </div>
+        <div class="mr c2">
+            <video src='ddp.mp4' autoplay='1' loop='1' controls='1'></video>
+        </div>
+        
+        <div class="br c1">
+            <img src='ilqr_controls.png'>
+        </div>
+
+        <div class="br c2">
+            <img src='ddp_controls.png'>
+        </div>
+
+    </div>
+
+    <script>
+        // MathJax config
+        MathJax.Hub.Config({
+            extensions: ["tex2jax.js"],
+            jax: ["input/TeX", "output/HTML-CSS"],
+            tex2jax: {
+                inlineMath: [['$', '$'], ["\\(", "\\)"]],
+                displayMath: [['$$', '$$'], ["\\[", "\\]"]],
+                processEscapes: true
+            },
+            // "HTML-CSS": { fonts: ["TeX"] }
+        });
+
+    </script>
+</body>
+</html>
