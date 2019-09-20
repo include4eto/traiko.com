@@ -8,14 +8,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/include4eto/traiko.com.git"
+    "url": "git+https://github.com/traikodinev/traiko.com.git"
   },
   "author": "Traiko Dinev",
   "license": "CC-BY-4.0",
   "bugs": {
-    "url": "https://github.com/include4eto/traiko.com/issues"
+    "url": "https://github.com/traikodinev/traiko.com/issues"
   },
-  "homepage": "https://github.com/include4eto/traiko.com#readme",
+  "homepage": "https://github.com/traikodinev/traiko.com#readme",
   "devDependencies": {
     "browser-sync": "^2.26.3",
     "gulp": "^3.9.1",
