@@ -92,6 +92,19 @@ header {
 					font-size: 56px;
 				}
 			}
+
+			.i-google-scholar {
+				position: relative;
+				top: 17px;
+				margin-top: -15px;
+
+				background: url('../resources/google-scholar.png');
+				background-size: 100% 100%;
+				width: 70px;
+				height: 70px;
+				display: inline-block;
+				
+			}
 		} // .links
 	} // .row
 }
