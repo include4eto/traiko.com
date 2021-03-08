@@ -133,6 +133,60 @@ section {
 	}
 }
 
+section.blog {
+	.blog-container {
+		margin-top: 15px;
+		vertical-align: top;
+		display: flex;
+		justify-content: start;
+		flex-wrap: wrap;
+	}
+
+	.blog-item {
+		background: #fff;
+		max-width: 250px;
+		padding: 15px 30px;
+		border-radius: 10px;
+		box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.3);
+		cursor: pointer;
+		position: relative;
+		display: inline-block;
+		margin-right: 10px;
+		margin-bottom: 20px;
+		border: 1px solid rgba(0, 0, 0, 0.4);
+
+		min-height: 350px;
+
+		text-align: center;
+
+		h3, .subtitle, .abstract {
+			text-align: left;;
+		}
+
+		.date {
+			color: #192a3e;
+			font-size: rem-calc(15);
+		}
+
+		&:hover {
+			top: -3px;
+		}
+
+		.abstract {
+			margin-top: 10px;
+			color: #192a3e;
+			font-size: rem-calc(17);
+			line-height: rem-calc(23);
+		}
+
+		h3 {
+			font-weight: 600;
+			margin-bottom: 0px;
+		}
+	}
+
+} //.section
+
 @media screen and (max-width: 1200px) {
 	header .row {
 		padding-left: 80px;

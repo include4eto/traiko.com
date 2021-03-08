@@ -27,6 +27,9 @@ a {
     .slider .slider-inner:hover {
       background: #1f92ac; }
 
+.hidden {
+  display: none; }
+
 body {
   background: #fff;
   margin: 0;
@@ -112,6 +115,43 @@ section {
     margin-top: 0px; }
   section:nth-child(2n+1) {
     background: #eaedf1; }
+
+section.blog .blog-container {
+  margin-top: 15px;
+  vertical-align: top;
+  display: flex;
+  justify-content: start;
+  flex-wrap: wrap; }
+
+section.blog .blog-item {
+  background: #fff;
+  max-width: 250px;
+  padding: 15px 30px;
+  border-radius: 10px;
+  box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.3);
+  cursor: pointer;
+  position: relative;
+  display: inline-block;
+  margin-right: 10px;
+  margin-bottom: 20px;
+  border: 1px solid rgba(0, 0, 0, 0.4);
+  min-height: 350px;
+  text-align: center; }
+  section.blog .blog-item h3, section.blog .blog-item .subtitle, section.blog .blog-item .abstract {
+    text-align: left; }
+  section.blog .blog-item .date {
+    color: #192a3e;
+    font-size: 0.9375rem; }
+  section.blog .blog-item:hover {
+    top: -3px; }
+  section.blog .blog-item .abstract {
+    margin-top: 10px;
+    color: #192a3e;
+    font-size: 1.0625rem;
+    line-height: 1.4375rem; }
+  section.blog .blog-item h3 {
+    font-weight: 600;
+    margin-bottom: 0px; }
 
 @media screen and (max-width: 1200px) {
   header .row {

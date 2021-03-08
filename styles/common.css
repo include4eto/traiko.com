@@ -26,3 +26,6 @@ a {
     cursor: pointer; }
     .slider .slider-inner:hover {
       background: #1f92ac; }
+
+.hidden {
+  display: none; }
